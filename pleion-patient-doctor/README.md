@@ -21,9 +21,14 @@ sudo git config --global --add safe.directory /home/vdmerwe/fabric/pleion/fabric
 ```
 3. Sync remote and checkout branch.
 ```
-sudo git remot update
+sudo git remote update
 sudo git fetch
 sudo git checkout --track -b origin/add-pleion-docter-patient-sample
+```
+4. Commit and push changes
+```
+sudo git commit -a -m "Update README.md"
+sudo git push origin add-pleion-docter-patient-sample
 ```
 ### VSCode
 In order to create and save files using and ssh session using VSCode you can use the VSCode extention called [Save as Root](https://marketplace.visualstudio.com/items?itemName=yy0931.save-as-root).
