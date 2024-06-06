@@ -39,7 +39,7 @@ sudo touch README.md
 ctrl P > Save as Root 
 ```
 ### Download Docker images and binaries
-Instructions taken from [Install FAbric and Fabric Samples](https://hyperledger-fabric.readthedocs.io/en/latest/install.html).
+Instructions taken from [Install Fabric and Fabric Samples](https://hyperledger-fabric.readthedocs.io/en/latest/install.html).
 
 To get the install script run this command from your root project directory `/fabric/pleion`:
 
@@ -57,5 +57,27 @@ ls -la
 ./install-fabric.sh -h
 sudo ./install-fabric.sh docker binary
 ```
-## Getting Started - Run Fabric
+## Getting Started 
+### Monitoring
+[Run Prometheus-Grafana](https://medium.com/coinmonks/hyperledger-fabric-v2-x-monitoring-using-prometheus-974e433073f5)
+1. Navigate to `prometheus-grafana` directory of the test network.
+```
+cd test-network\prometheus-grafana
+```
+2. Start the Prometheus and Grafana service.
+```
+docker-compose up
+```
+3. Start fabric test network and create a channel `mychannel`
+```
+cd ../
+./network.sh up createChannel -ca -c mychannel
+```
+[Hyperledger Explorer](https://github.com/hyperledger-labs/blockchain-explorer)
+
+[Hyperledger REST API Swagger](https://raw.githubusercontent.com/hyperledger/blockchain-explorer/master/app/swagger.json)
+
+
+### Test network
 [Run Fabric Samples](https://hyperledger-fabric.readthedocs.io/en/latest/getting_started_run_fabric.html)
+
