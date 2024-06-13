@@ -79,10 +79,20 @@ cd ../
 ./network.sh up createChannel -ca -c mychannel
 ```
 [Hyperledger Explorer](https://github.com/hyperledger-labs/blockchain-explorer)
+1. Navigate to explorer folder and start 
+```
+cd pleion/pleion-patient-doctor/explorer
+sudo docker-compose up -d
+```
 
 [Hyperledger REST API Swagger](https://raw.githubusercontent.com/hyperledger/blockchain-explorer/master/app/swagger.json)
 
 
 ### Test network
 [Run Fabric Samples](https://hyperledger-fabric.readthedocs.io/en/latest/getting_started_run_fabric.html)
+1. Run test-network
+```
+cd pleion/fabric-samples/test-network
+sudo ./network.sh createChannel -c channel1
+```
 
